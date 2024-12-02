@@ -1,0 +1,89 @@
+/* Paleta de cores */
+:root {
+    --green: #3d8a40;
+    --dark-green: #265d29;
+    --light-green: #C8E6C9;
+    --white: #FFFFFF;
+    --gray: #F5F5F5;
+}
+
+/* Body e Container */
+body {
+    background-color: var(--gray);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 20px 0;
+}
+
+.container {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h1, h2 {
+    font-weight: bold;
+}
+
+.section-title {
+    color: var(--dark-green);
+    border-bottom: 2px solid var(--light-green);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Inputs */
+.form-control {
+    border: 1px solid var(--light-green);
+    border-radius: 5px;
+}
+
+/* Botão */
+.btn-green {
+    background-color: var(--green);
+    border: none;
+    color: var(--white);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-green:hover {
+    background-color: var(--dark-green);
+}
+
+.btn-green:focus {
+    outline: none;
+}
+
+
+/* Estilo adicional para tabelas */
+.table {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid var(--light-green);
+}

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Culturas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <h1 class="text-center">Cadastro de Culturas</h1>
+        <form id="culturasForm">
+            <!-- Cultivo de Milho -->
+            <h2 class="section-title">Cultivo de Milho</h2>
+            <table class="table table-bordered">
+                <thead class="table-success">
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Unidade</th>
+                        <th>2022/2023</th>
+                        <th>2023/2024</th>
+                        <th>2024/2025</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Área Própria</td>
+                        <td>ha</td>
+                        <td><input type="number" class="form-control area-propria" data-total="milho_total_2023"></td>
+                        <td><input type="number" class="form-control area-propria" data-total="milho_total_2024"></td>
+                        <td><input type="number" class="form-control area-propria" data-total="milho_total_2025"></td>
+                    </tr>
+                    <tr>
+                        <td>Área Arrendada</td>
+                        <td>ha</td>
+                        <td><input type="number" class="form-control area-arrendada" data-total="milho_total_2023"></td>
+                        <td><input type="number" class="form-control area-arrendada" data-total="milho_total_2024"></td>
+                        <td><input type="number" class="form-control area-arrendada" data-total="milho_total_2025"></td>
+                    </tr>
+                    <tr>
+                        <td>Área Total</td>
+                        <td>ha</td>
+                        <td><input type="number" class="form-control area-total" name="milho_total_2023" readonly></td>
+                        <td><input type="number" class="form-control area-total" name="milho_total_2024" readonly></td>
+                        <td><input type="number" class="form-control area-total" name="milho_total_2025" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>Produtividade</td>
+                        <td>sc/ha</td>
+                        <td><input type="number" class="form-control" name="milho_produtividade_2023"></td>
+                        <td><input type="number" class="form-control" name="milho_produtividade_2024"></td>
+                        <td><input type="number" class="form-control" name="milho_produtividade_2025"></td>
+                    </tr>
+                    <tr>
+                        <td>Preço</td>
+                        <td>R$/sc</td>
+                        <td><input type="number" class="form-control" name="milho_preco_2023"></td>
+                        <td><input type="number" class="form-control" name="milho_preco_2024"></td>
+                        <td><input type="number" class="form-control" name="milho_preco_2025"></td>
+                    </tr>
+                    <tr>
+                        <td>Custo Produção</td>
+                        <td>R$/ha</td>
+                        <td><input type="number" class="form-control" name="milho_custo_2023"></td>
+                        <td><input type="number" class="form-control" name="milho_custo_2024"></td>
+                        <td><input type="number" class="form-control" name="milho_custo_2025"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Cultivo de Soja -->
+            <h2 class="section-title">Cultivo de Soja</h2>
+            <table class="table table-bordered">
+                <thead class="table-success">
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Unidade</th>
+                        <th>2022/2023</th>
+                        <th>2023/2024</th>
+                        <th>2024/2025</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Área Própria</td>
+                        <td>ha</td>
+                        <td><input type="number" class="form-control area-propria" data-total="soja_total_2023"></td>
+                        <td><input type="number" class="form-control area-propria" data-total="soja_total_2024"></td>
+                        <td><input type="number" class="form-control area-propria" data-total="soja_total_2025"></td>
+                    </tr>
+                    <tr>
+                        <td>Área Arrendada</td>
+                        <td>ha</td>
+                        <td><input type="number" class="form-control area-arrendada" data-total="soja_total_2023"></td>
+                        <td><input type="number" class="form-control area-arrendada" data-total="soja_total_2024"></td>
+                        <td><input type="number" class="form-control area-arrendada" data-total="soja_total_2025"></td>
+                    </tr>
+                    <tr>
+                        <td>Área Total</td>
+                        <td>ha</td>
+                        <td><input type="number" class="form-control area-total" name="soja_total_2023" readonly></td>
+                        <td><input type="number" class="form-control area-total" name="soja_total_2024" readonly></td>
+                        <td><input type="number" class="form-control area-total" name="soja_total_2025" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>Produtividade</td>
+                        <td>sc/ha</td>
+                        <td><input type="number" class="form-control" name="soja_produtividade_2023"></td>
+                        <td><input type="number" class="form-control" name="soja_produtividade_2024"></td>
+                        <td><input type="number" class="form-control" name="soja_produtividade_2025"></td>
+                    </tr>
+                    <tr>
+                        <td>Preço</td>
+                        <td>R$/sc</td>
+                        <td><input type="number" class="form-control" name="soja_preco_2023"></td>
+                        <td><input type="number" class="form-control" name="soja_preco_2024"></td>
+                        <td><input type="number" class="form-control" name="soja_preco_2025"></td>
+                    </tr>
+                    <tr>
+                        <td>Custo Produção</td>
+                        <td>R$/ha</td>
+                        <td><input type="number" class="form-control" name="soja_custo_2023"></td>
+                        <td><input type="number" class="form-control" name="soja_custo_2024"></td>
+                        <td><input type="number" class="form-control" name="soja_custo_2025"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Outras Culturas -->
+            <h2 class="section-title">Outras Culturas</h2>
+            <table class="table table-bordered">
+                <thead class="table-success">
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Unidade</th>
+                        <th>2022/2023</th>
+                        <th>2023/2024</th>
+                        <th>2024/2025</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Área Própria</td>
+                        <td>ha</td>
+                        <td><input type="number" class="form-control area-propria" data-total="outras_total_2023"></td>
+                        <td><input type="number" class="form-control area-propria" data-total="outras_total_2024"></td>
+                        <td><input type="number" class="form-control area-propria" data-total="outras_total_2025"></td>
+                    </tr>
+                    <tr>
+                        <td>Área Arrendada</td>
+                        <td>ha</td>
+                        <td><input type="number" class="form-control area-arrendada" data-total="outras_total_2023">
+                        </td>
+                        <td><input type="number" class="form-control area-arrendada" data-total="outras_total_2024">
+                        </td>
+                        <td><input type="number" class="form-control area-arrendada" data-total="outras_total_2025">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Área Total</td>
+                        <td>ha</td>
+                        <td><input type="number" class="form-control area-total" name="outras_total_2023" readonly></td>
+                        <td><input type="number" class="form-control area-total" name="outras_total_2024" readonly></td>
+                        <td><input type="number" class="form-control area-total" name="outras_total_2025" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>Produtividade</td>
+                        <td>sc/ha</td>
+                        <td><input type="number" class="form-control" name="outras_produtividade_2023"></td>
+                        <td><input type="number" class="form-control" name="outras_produtividade_2024"></td>
+                        <td><input type="number" class="form-control" name="outras_produtividade_2025"></td>
+                    </tr>
+                    <tr>
+                        <td>Preço</td>
+                        <td>R$/sc</td>
+                        <td><input type="number" class="form-control" name="outras_preco_2023"></td>
+                        <td><input type="number" class="form-control" name="outras_preco_2024"></td>
+                        <td><input type="number" class="form-control" name="outras_preco_2025"></td>
+                    </tr>
+                    <tr>
+                        <td>Custo Produção</td>
+                        <td>R$/ha</td>
+                        <td><input type="number" class="form-control" name="outras_custo_2023"></td>
+                        <td><input type="number" class="form-control" name="outras_custo_2024"></td>
+                        <td><input type="number" class="form-control" name="outras_custo_2025"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 class="section-title">Informações das Propriedades</h2>
+            <div id="informacoes-propriedades">
+                <table class="table table-bordered">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Matrícula</th>
+                            <th>Nome da Fazenda</th>
+                            <th>Área Total (ha)</th>
+                            <th>Área Útil (ha)</th>
+                            <th>Área Construída (ha)</th>
+                            <th>% Soja</th>
+                            <th>% Milho</th>
+                            <th>% Outras Culturas</th>
+                            <th>Cidade - UF</th>
+                            <th>Valor de Mercado</th>
+                            <th>Valor de Venda Forçada</th>
+                            <th>Coordenadas</th>
+                            <th>Arrendada/Própria</th>
+                        </tr>
+                    </thead>
+                    <tbody id="propriedades-body">
+                        <tr>
+                            <td><input type="text" class="form-control" name="matricula_1"></td>
+                            <td><input type="text" class="form-control" name="nome_fazenda_1"></td>
+                            <td><input type="number" step="0.01" class="form-control" name="area_total_1"></td>
+                            <td><input type="number" step="0.01" class="form-control" name="area_util_1"></td>
+                            <td><input type="number" step="0.01" class="form-control" name="area_construida_1"></td>
+                            <td><input type="number" step="0.01" class="form-control" name="percentual_soja_1"></td>
+                            <td><input type="number" step="0.01" class="form-control" name="percentual_milho_1"></td>
+                            <td><input type="number" step="0.01" class="form-control"
+                                    name="percentual_outras_culturas_1"></td>
+                            <td><input type="text" class="form-control" name="cidade_uf_1"></td>
+                            <td><input type="number" step="0.01" class="form-control" name="valor_mercado_1"></td>
+                            <td><input type="number" step="0.01" class="form-control" name="valor_venda_forcada_1"></td>
+                            <td><input type="text" class="form-control" name="coordenadas_1"></td>
+                            <td>
+                                <select class="form-control" name="arrendada_propria_1">
+                                    <option value="propria">Própria</option>
+                                    <option value="arrendada">Arrendada</option>
+                                    
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="btn btn-success" id="add-row">+</button>
+            </div>
+
+            <h2 class="section-title">Destinação dos Recursos</h2>
+<div id="destinacao-recursos">
+    <table class="table table-bordered">
+        <thead class="table-light">
+            <tr>
+                <th>Categoria</th>
+                <th>Valores (R$)</th>
+                <th>%</th>
+            </tr>
+        </thead>
+        <tbody id="recursos-body">
+            <tr>
+                <td><input type="text" class="form-control" value="Mão de obra" readonly></td>
+                <td><input type="number" class="form-control valores" data-index="1"></td>
+                <td><input type="text" class="form-control porcentagens" data-index="1" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" value="Insumos" readonly></td>
+                <td><input type="number" class="form-control valores" data-index="2"></td>
+                <td><input type="text" class="form-control porcentagens" data-index="2" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" value="Aluguel de maquinário" readonly></td>
+                <td><input type="number" class="form-control valores" data-index="3"></td>
+                <td><input type="text" class="form-control porcentagens" data-index="3" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" value="Reperfilamento de dívidas" readonly></td>
+                <td><input type="number" class="form-control valores" data-index="4"></td>
+                <td><input type="text" class="form-control porcentagens" data-index="4" readonly></td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th><input type="text" class="form-control" id="total-valores" readonly></th>
+                <th><input type="text" class="form-control" id="total-porcentagem" readonly></th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<h2 class="section-title">Curva ABC Clientes</h2>
+<div id="curva-abc-clientes">
+    <table class="table table-bordered">
+        <thead class="table-light">
+            <tr>
+                <th>Cliente</th>
+                <th>Valor de Compra Anual (R$)</th>
+                <th>% Acumulado</th>
+            </tr>
+        </thead>
+        <tbody id="abc-body">
+            <tr>
+                <td><input type="text" class="form-control" value="Rural 1" readonly></td>
+                <td><input type="number" class="form-control valores-abc" data-index="1"></td>
+                <td><input type="text" class="form-control percentuais-abc" data-index="1" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" value="Rural 2" readonly></td>
+                <td><input type="number" class="form-control valores-abc" data-index="2"></td>
+                <td><input type="text" class="form-control percentuais-abc" data-index="2" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" value="Rural 3" readonly></td>
+                <td><input type="number" class="form-control valores-abc" data-index="3"></td>
+                <td><input type="text" class="form-control percentuais-abc" data-index="3" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" value="Rural 4" readonly></td>
+                <td><input type="number" class="form-control valores-abc" data-index="4"></td>
+                <td><input type="text" class="form-control percentuais-abc" data-index="4" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" value="Rural 5" readonly></td>
+                <td><input type="number" class="form-control valores-abc" data-index="5"></td>
+                <td><input type="text" class="form-control percentuais-abc" data-index="5" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" value="Rural 6" readonly></td>
+                <td><input type="number" class="form-control valores-abc" data-index="6"></td>
+                <td><input type="text" class="form-control percentuais-abc" data-index="6" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" value="Rural 7" readonly></td>
+                <td><input type="number" class="form-control valores-abc" data-index="7"></td>
+                <td><input type="text" class="form-control percentuais-abc" data-index="7" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" value="Rural 8" readonly></td>
+                <td><input type="number" class="form-control valores-abc" data-index="8"></td>
+                <td><input type="text" class="form-control percentuais-abc" data-index="8" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" value="Rural 9" readonly></td>
+                <td><input type="number" class="form-control valores-abc" data-index="9"></td>
+                <td><input type="text" class="form-control percentuais-abc" data-index="99" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" value="Rural 10" readonly></td>
+                <td><input type="number" class="form-control valores-abc" data-index="10"></td>
+                <td><input type="text" class="form-control percentuais-abc" data-index="10" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" value="Rural 11" readonly></td>
+                <td><input type="number" class="form-control valores-abc" data-index="11"></td>
+                <td><input type="text" class="form-control percentuais-abc" data-index="11" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" value="Rural 12" readonly></td>
+                <td><input type="number" class="form-control valores-abc" data-index="12"></td>
+                <td><input type="text" class="form-control percentuais-abc" data-index="12" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" value="Rural 13" readonly></td>
+                <td><input type="number" class="form-control valores-abc" data-index="13"></td>
+                <td><input type="text" class="form-control percentuais-abc" data-index="13" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" value="Rural 14" readonly></td>
+                <td><input type="number" class="form-control valores-abc" data-index="14"></td>
+                <td><input type="text" class="form-control percentuais-abc" data-index="14" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" value="Rural 15" readonly></td>
+                <td><input type="number" class="form-control valores-abc" data-index="15"></td>
+                <td><input type="text" class="form-control percentuais-abc" data-index="15" readonly></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th><input type="text" class="form-control" id="total-abc" readonly></th>
+                <th><input type="text" class="form-control" id="total-percentual-abc" readonly></th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+
+            <!-- Botão de envio -->
+            <button type="submit" class="btn btn-green mt-3">Enviar</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
